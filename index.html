@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tank Problem - Evervent Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Water Tank Visualizer</h1>
+        <p class="subtitle">Enter block heights separated by commas to calculate and visualize trapped water.</p>
+
+        <div class="input-section">
+            <label for="inputArray">Block Heights (comma-separated):</label>
+            <input type="text" id="inputArray" value="0,4,0,0,0,6,0,6,4,0" placeholder="e.g. 0,4,0,0,0,6,0,6,4,0">
+            <button id="calculateBtn">Calculate & Visualize</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Total Water Stored: <span id="waterOutput">0</span> Units</h2>
+        </div>
+
+        <div class="visualization-container">
+            <svg id="waterTankSvg" viewBox="0 0 800 350" preserveAspectRatio="xMidYMid meet"></svg>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
